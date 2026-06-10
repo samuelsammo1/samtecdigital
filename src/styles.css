@@ -4,8 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Space Grotesk + DM Sans */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+/* Fonts loaded via <link> in __root.tsx head: Space Grotesk + DM Sans */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
