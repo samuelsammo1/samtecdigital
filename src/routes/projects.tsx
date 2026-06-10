@@ -142,5 +142,3 @@ function Projects() {
     </>
   );
 }
-
-import { useState } from "react";
