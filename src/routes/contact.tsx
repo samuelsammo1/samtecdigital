@@ -1,4 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
+import { useState } from "react";
+import { submitContact } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -82,8 +85,9 @@ function Contact() {
               </div>
             </div>
 
-            {/* Message / Availability */}
-            <div>
+            {/* Contact form + Availability */}
+            <div className="space-y-8">
+              <ContactForm />
               <div className="rounded-2xl border border-white/[0.06] bg-card p-8 md:p-10">
                 <h2 className="font-display text-xl font-bold">Availability</h2>
                 <p className="mt-2 text-sm text-muted-foreground">
