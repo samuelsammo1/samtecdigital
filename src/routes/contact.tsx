@@ -1,4 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
+import { useState } from "react";
+import { submitContact } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -82,8 +85,9 @@ function Contact() {
               </div>
             </div>
 
-            {/* Message / Availability */}
-            <div>
+            {/* Contact form + Availability */}
+            <div className="space-y-8">
+              <ContactForm />
               <div className="rounded-2xl border border-white/[0.06] bg-card p-8 md:p-10">
                 <h2 className="font-display text-xl font-bold">Availability</h2>
                 <p className="mt-2 text-sm text-muted-foreground">
@@ -148,5 +152,119 @@ function Contact() {
         </div>
       </section>
     </>
+  );
+}
+
+type Status = "idle" | "submitting" | "success" | "error";
+
+function ContactForm() {
+  const submit = useServerFn(submitContact);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState<string>("");
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("submitting");
+    setErrorMsg("");
+    try {
+      await submit({ data: form });
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+    }
+  };
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className="rounded-2xl border border-white/[0.06] bg-card p-8 md:p-10"
+    >
+      <h2 className="font-display text-xl font-bold">Send a message</h2>
+      <p className="mt-2 text-sm text-muted-foreground">
+        Fill out the form and I'll get back to you soon.
+      </p>
+
+      <div className="mt-6 space-y-4">
+        <div>
+          <label htmlFor="name" className="mb-1.5 block text-xs font-medium text-muted-foreground">
+            Name
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            maxLength={100}
+            value={form.name}
+            onChange={handleChange}
+            disabled={status === "submitting"}
+            className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20"
+            placeholder="Your name"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="email" className="mb-1.5 block text-xs font-medium text-muted-foreground">
+            Email
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            maxLength={255}
+            value={form.email}
+            onChange={handleChange}
+            disabled={status === "submitting"}
+            className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20"
+            placeholder="you@example.com"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="message" className="mb-1.5 block text-xs font-medium text-muted-foreground">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            maxLength={2000}
+            rows={5}
+            value={form.message}
+            onChange={handleChange}
+            disabled={status === "submitting"}
+            className="w-full resize-none rounded-lg border border-white/10 bg-surface px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/20"
+            placeholder="Tell me about your project or opportunity…"
+          />
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        disabled={status === "submitting"}
+        className="mt-6 flex w-full items-center justify-center rounded-lg bg-primary px-6 py-4 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 glow-indigo disabled:cursor-not-allowed disabled:opacity-60"
+      >
+        {status === "submitting" ? "Sending…" : "Send message"}
+      </button>
+
+      {status === "success" && (
+        <p className="mt-4 rounded-lg border border-green-500/20 bg-green-500/10 px-4 py-3 text-sm text-green-300">
+          Thanks! Your message was sent successfully.
+        </p>
+      )}
+      {status === "error" && (
+        <p className="mt-4 rounded-lg border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-red-300">
+          {errorMsg || "Failed to send. Please try again."}
+        </p>
+      )}
+    </form>
   );
 }
