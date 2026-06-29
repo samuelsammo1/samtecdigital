@@ -15,6 +15,20 @@ export const Route = createFileRoute("/projects")({
 
 const projects = [
   {
+    title: "AI Powered Job Alert Automation",
+    description:
+      "Automated job discovery system that scrapes listings, filters by role and skills, and delivers personalized alerts in real time using AI-powered matching and workflow automation.",
+    tags: ["AI", "Automation", "n8n", "Scraping"],
+    category: "Automation",
+  },
+  {
+    title: "Supermarket Analytics (Capstone Project)",
+    description:
+      "End-to-end analytics capstone analyzing supermarket sales data to uncover customer trends, product performance, and revenue drivers with interactive dashboards and SQL-driven insights.",
+    tags: ["Data Analysis", "SQL", "Dashboards", "Capstone"],
+    category: "Data",
+  },
+  {
     title: "Real Estate AI Agent",
     description:
       "Built a Voiceflow-powered chatbot for property inquiries and lead engagement. The agent handles natural language queries about listings, schedules viewings, and captures lead information seamlessly.",
@@ -88,6 +102,17 @@ function Projects() {
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
             A collection of projects spanning AI agents, data analysis, web development, and automation — built with passion and purpose.
           </p>
+
+          <a
+            href="https://drive.google.com/drive/folders/1REBgVCp4dRMzImeAX2mEqb-7IQY3Dd1t"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5 text-sm font-medium text-primary transition-all hover:bg-primary/20"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg>
+            View more work on Google Drive
+            <span aria-hidden>→</span>
+          </a>
 
           {/* Category filter */}
           <div className="mt-10 flex flex-wrap gap-3">
