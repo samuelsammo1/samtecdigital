@@ -23,13 +23,15 @@ const technicalSkills = [
 ];
 
 const tools = [
+  "n8n",
+  "Make (Integromat)",
+  "Voiceflow",
+  "Zapier",
   "WordPress",
   "Hostinger",
   "Replit",
   "Microsoft Excel",
-  "Voiceflow",
   "Tally",
-  "Make (Integromat)",
   "PostgreSQL",
 ];
 
