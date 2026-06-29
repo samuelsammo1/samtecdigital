@@ -103,6 +103,17 @@ function Projects() {
             A collection of projects spanning AI agents, data analysis, web development, and automation — built with passion and purpose.
           </p>
 
+          <a
+            href="https://drive.google.com/drive/folders/1REBgVCp4dRMzImeAX2mEqb-7IQY3Dd1t"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5 text-sm font-medium text-primary transition-all hover:bg-primary/20"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg>
+            View more work on Google Drive
+            <span aria-hidden>→</span>
+          </a>
+
           {/* Category filter */}
           <div className="mt-10 flex flex-wrap gap-3">
             {categories.map((cat) => (
