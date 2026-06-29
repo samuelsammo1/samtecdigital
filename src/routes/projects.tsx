@@ -15,6 +15,20 @@ export const Route = createFileRoute("/projects")({
 
 const projects = [
   {
+    title: "AI Powered Job Alert Automation",
+    description:
+      "Automated job discovery system that scrapes listings, filters by role and skills, and delivers personalized alerts in real time using AI-powered matching and workflow automation.",
+    tags: ["AI", "Automation", "n8n", "Scraping"],
+    category: "Automation",
+  },
+  {
+    title: "Supermarket Analytics (Capstone Project)",
+    description:
+      "End-to-end analytics capstone analyzing supermarket sales data to uncover customer trends, product performance, and revenue drivers with interactive dashboards and SQL-driven insights.",
+    tags: ["Data Analysis", "SQL", "Dashboards", "Capstone"],
+    category: "Data",
+  },
+  {
     title: "Real Estate AI Agent",
     description:
       "Built a Voiceflow-powered chatbot for property inquiries and lead engagement. The agent handles natural language queries about listings, schedules viewings, and captures lead information seamlessly.",
