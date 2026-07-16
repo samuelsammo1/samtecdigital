@@ -15,6 +15,13 @@ export const Route = createFileRoute("/projects")({
 
 const projects = [
   {
+    title: "Titanic Survival Prediction",
+    description:
+      "Built a machine learning classifier to predict passenger survival on the Titanic using Python, pandas, and scikit-learn. Engineered features from Pclass, Age, SibSp, Parch, and Fare, handled missing values, trained a RandomForestClassifier, and evaluated accuracy on a held-out test set.",
+    tags: ["Machine Learning", "Python", "scikit-learn", "Jupyter"],
+    category: "Data",
+  },
+  {
     title: "AIFPU Online Voting System",
     description:
       "Secure online voting platform for Akanu Ibiam Federal Polytechnic, Unwana. Features student registration with department/programme selection, admin portal for managing elections, positions, candidates, and departments, real-time vote tracking, audit logs, and results dashboards for transparent student union and departmental elections.",
