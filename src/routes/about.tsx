@@ -248,6 +248,48 @@ function About() {
         </div>
       </section>
 
+      {/* Volunteering */}
+      <section className="border-y border-white/[0.06] bg-surface py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-10">
+            <p className="text-sm font-medium text-primary mb-2">Volunteering</p>
+            <h2 className="font-display text-2xl font-bold tracking-tight md:text-3xl">
+              Community & Leadership
+            </h2>
+          </div>
+
+          <div className="relative space-y-0">
+            <div className="relative border-l border-white/[0.08] pl-8 pb-10 last:pb-0">
+              <div className="absolute -left-[5px] top-0 h-2.5 w-2.5 rounded-full bg-primary ring-4 ring-background" />
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <h3 className="font-display text-lg font-bold">IAB Industry Exhibitions and Forums committee</h3>
+                <span className="text-sm text-muted-foreground">— IEEE Robotics and Automation Society</span>
+              </div>
+              <p className="mb-3 text-sm text-muted-foreground">
+                Jul 2026 — Present · · Science and Technology
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Supported the planning and coordination of industry exhibitions and professional forums, helping connect robotics and automation communities through events and knowledge sharing.
+              </p>
+            </div>
+
+            <div className="relative border-l border-white/[0.08] pl-8 pb-0 last:pb-0">
+              <div className="absolute -left-[5px] top-0 h-2.5 w-2.5 rounded-full bg-primary ring-4 ring-background" />
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <h3 className="font-display text-lg font-bold">Director of Software</h3>
+                <span className="text-sm text-muted-foreground">— National Association of Computing Students (NACOS)</span>
+              </div>
+              <p className="mb-3 text-sm text-muted-foreground">
+                Sep 2025 — Present · Akanu Ibiam Federal Polytechnic, Unwana, Nigeria · Science and Technology
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Serving as the Director of Software, I lead software-related initiatives that promote innovation, technical skill-building, and collaboration among computing students.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Education */}
       <section className="border-y border-white/[0.06] bg-surface py-20">
         <div className="mx-auto max-w-7xl px-6">
