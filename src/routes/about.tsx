@@ -266,7 +266,7 @@ function About() {
                 <span className="text-sm text-muted-foreground">— IEEE Robotics and Automation Society</span>
               </div>
               <p className="mb-3 text-sm text-muted-foreground">
-                Jul 2026 — Present · · Science and Technology
+                Jul 2026 — Present · Science and Technology
               </p>
               <p className="text-sm text-muted-foreground">
                 Supported the planning and coordination of industry exhibitions and professional forums, helping connect robotics and automation communities through events and knowledge sharing.
