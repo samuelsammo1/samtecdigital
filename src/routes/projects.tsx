@@ -15,12 +15,20 @@ export const Route = createFileRoute("/projects")({
 
 const projects = [
   {
+    title: "AIFPU Online Voting System",
+    description:
+      "Secure online voting platform for Akanu Ibiam Federal Polytechnic, Unwana. Features student registration with department/programme selection, admin portal for managing elections, positions, candidates, and departments, real-time vote tracking, audit logs, and results dashboards for transparent student union and departmental elections.",
+    tags: ["Web Dev", "Authentication", "Dashboards", "Real-time"],
+    category: "Web Dev",
+  },
+  {
     title: "AI Powered Job Alert Automation",
     description:
       "Automated job discovery system that scrapes listings, filters by role and skills, and delivers personalized alerts in real time using AI-powered matching and workflow automation.",
     tags: ["AI", "Automation", "n8n", "Scraping"],
     category: "Automation",
   },
+
   {
     title: "Supermarket Analytics (Capstone Project)",
     description:
