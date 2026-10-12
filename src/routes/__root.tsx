@@ -86,8 +86,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Samuel Sam Eno | Agentic AI | Developer & Data Analyst" },
       { name: "twitter:description", content: "Portfolio of Samuel Sam Eno — Junior AI Agent Developer, Data Analyst, and Web Developer skilled in Python, SQL, JavaScript, and AI-driven solutions." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/PSOm2W91AZgWmVArVr29cfOWzvr1/social-images/social-1781204975245-IMG-20260519-WA0010.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/PSOm2W91AZgWmVArVr29cfOWzvr1/social-images/social-1781204975245-IMG-20260519-WA0010.webp" },
     ],
     links: [
       {

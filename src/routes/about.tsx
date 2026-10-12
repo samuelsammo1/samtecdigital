@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import avatar from "../assets/avatar.png";
+import avatarAsset from "../assets/samuel-portrait.jpeg.asset.json";
+
+const avatar = avatarAsset.url;
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -8,6 +10,8 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Learn about Samuel Sam Eno — background, skills, education, certifications, and professional experience." },
       { property: "og:title", content: "About — Samuel Sam Eno" },
       { property: "og:description", content: "Learn about Samuel Sam Eno — background, skills, education, certifications, and professional experience." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: About,

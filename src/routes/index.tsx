@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import heroBg from "../assets/hero-bg.png";
-import avatarAsset from "../assets/samuel.jpg.asset.json";
+import avatarAsset from "../assets/samuel-portrait.jpeg.asset.json";
 
 const avatar = avatarAsset.url;
 
@@ -12,6 +12,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Portfolio of Samuel Sam Eno — Junior AI Agent Developer, Data Analyst, and Web Developer passionate about AI and data-driven solutions." },
       { property: "og:title", content: "Samuel Sam Eno | AI Developer & Data Analyst" },
       { property: "og:description", content: "Junior AI Agent Developer, Data Analyst, and Web Developer passionate about AI and data-driven solutions." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -19,19 +21,19 @@ export const Route = createFileRoute("/")({
 
 const featuredProjects = [
   {
-    title: "Real Estate AI Agent",
-    description: "Built a Voiceflow-powered chatbot for property inquiries and lead engagement, streamlining real estate operations.",
-    tags: ["Voiceflow", "AI", "Automation"],
+    title: "AI Email Intelligence & Automation System",
+    description: "Built an AI workflow that classifies incoming emails, extracts key details, prioritizes messages, and routes requests to the right team.",
+    tags: ["n8n", "Gmail", "Gemini", "Automation"],
   },
   {
-    title: "Smart Attendance System",
-    description: "Developed a real-time attendance tracking system with automated reporting and analytics dashboard.",
-    tags: ["PHP", "MySQL", "JavaScript"],
+    title: "AI Job Application Agent",
+    description: "Created a job application assistant that extracts resume content, evaluates role fit, and generates tailored application insights.",
+    tags: ["Python", "Streamlit", "Gemini"],
   },
   {
-    title: "Mental Health Analysis",
-    description: "Used SQL to analyze student survey data, identifying stress patterns and trends for institutional insights.",
-    tags: ["SQL", "Data Analysis"],
+    title: "AI Invoice & Payment Follow-Up System",
+    description: "Automated invoice tracking and payment follow-ups using invoice dates, due dates, and payment status.",
+    tags: ["n8n", "Google Sheets", "Automation"],
   },
 ];
 
