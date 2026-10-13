@@ -244,14 +244,16 @@ function About() {
                 <p className="mb-3 text-sm text-muted-foreground">
                   {job.period} {job.location && `· ${job.location}`}
                 </p>
-                <ul className="space-y-1.5">
-                  {job.bullets.map((bullet, bi) => (
-                    <li key={bi} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <svg className="mt-0.5 h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
+                {job.bullets.length > 0 && (
+                  <ul className="space-y-1.5">
+                    {job.bullets.map((bullet, bi) => (
+                      <li key={bi} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
