@@ -41,7 +41,13 @@ const tools = [
 
 const workExperience = [
   {
-    role: "Web & Systems Developer",
+    role: "AI Automation Specialist",
+    company: "Brand You Creative Agency",
+    period: "October 2026",
+    bullets: [],
+  },
+  {
+    role: "AI Specialist/Web & Systems Developer",
     company: "DMS Ventures LLC",
     period: "2026 — Present",
     location: "Remote",
