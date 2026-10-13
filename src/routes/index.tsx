@@ -231,7 +231,7 @@ function Index() {
             Ready to build something <span className="text-gradient">together?</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            I'm open to internships and entry-level opportunities in AI development, data analysis, and web development.
+            I'm available for internships, entry-level roles, full-time or contract work, and remote, flexible freelance projects in AI, data analysis, and web development.
           </p>
           <div className="mt-8">
             <Link

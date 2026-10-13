@@ -7,9 +7,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Samuel Sam Eno" },
-      { name: "description", content: "Get in touch with Samuel Sam Eno — open to internships and entry-level opportunities in AI, data, and web development." },
+      { name: "description", content: "Get in touch with Samuel Sam Eno about internships, entry-level roles, full-time or contract work, and remote freelance projects in AI, data, and web development." },
       { property: "og:title", content: "Contact — Samuel Sam Eno" },
-      { property: "og:description", content: "Get in touch with Samuel Sam Eno — open to internships and entry-level opportunities in AI, data, and web development." },
+      { property: "og:description", content: "Get in touch with Samuel Sam Eno about internships, entry-level roles, full-time or contract work, and remote freelance projects in AI, data, and web development." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -30,7 +30,7 @@ function Contact() {
                 Let's work <span className="text-gradient">together</span>
               </h1>
               <p className="mt-4 max-w-md text-lg text-muted-foreground">
-                I'm open to internships and entry-level opportunities. Whether you have a project in mind or just want to connect, I'd love to hear from you.
+                I'm open to internships and entry-level roles, full-time or contract work, and remote, flexible freelance projects in AI, data, and web development.
               </p>
 
               <div className="mt-10 space-y-6">
@@ -114,7 +114,7 @@ function Contact() {
                     <div className="mt-0.5 h-2 w-2 rounded-full bg-green-400 shrink-0" />
                     <div>
                       <p className="text-sm font-medium text-foreground">Freelance Projects</p>
-                      <p className="text-xs text-muted-foreground">Web development, data analysis, AI automation</p>
+                      <p className="text-xs text-muted-foreground">Remote and flexible · Web development, data analysis, AI automation</p>
                     </div>
                   </div>
                 </div>
