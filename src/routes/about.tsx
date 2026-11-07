@@ -337,6 +337,14 @@ function About() {
             <h2 className="font-display text-2xl font-bold tracking-tight md:text-3xl">
               Credentials & Certificates
             </h2>
+            <a
+              href="https://drive.google.com/drive/folders/1REBgVCp4dRMzImeAX2mEqb-7IQY3Dd1t?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+            >
+              View certifications folder <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

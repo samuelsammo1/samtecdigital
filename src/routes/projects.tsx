@@ -17,6 +17,14 @@ export const Route = createFileRoute("/projects")({
 
 const projects = [
   {
+    title: "Supreme Health Care International Website",
+    description:
+      "Developed an e-commerce website for Supreme Health Care International, presenting massage, fitness, and therapy equipment with an online shopping experience for customers in Nigeria.",
+    tags: ["Web Development", "E-commerce", "Healthcare"],
+    category: "Web Dev",
+    link: "https://supremehealthcareintl.com/",
+  },
+  {
     title: "AI Email Intelligence & Automation System",
     description:
       "Built an AI workflow that classifies incoming emails as client, job opportunity, support, invoice, or newsletter; extracts key details; sets priority; and routes requests to the right team using Gmail, Gemini, and Google Sheets.",
@@ -221,6 +229,16 @@ function Projects() {
                     </span>
                   ))}
                 </div>
+                {"link" in project && typeof project.link === "string" && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-medium text-primary hover:underline"
+                  >
+                    Visit website <span aria-hidden="true">↗</span>
+                  </a>
+                )}
               </div>
             ))}
           </div>

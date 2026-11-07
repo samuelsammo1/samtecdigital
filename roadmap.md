@@ -5,3 +5,6 @@
 - [x] Verify the finished preview and check the latest build status.
 - [x] Add the Brand You Creative Agency AI Automation Specialist role dated October 2026.
 - [x] Rename the DMS Ventures LLC role to AI Specialist/Web & Systems Developer and verify both entries in the preview.
+- [x] Update availability wording for internships, entry-level, contract/full-time, and remote freelance work.
+- [x] Add the supplied Drive folder as the certifications link.
+- [x] Add Supreme Healthcare International to the portfolio projects and verify the link.
