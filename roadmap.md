@@ -9,3 +9,4 @@
 - [x] Add the supplied Drive folder as the certifications link.
 - [x] Add Supreme Healthcare International to the portfolio projects and verify the link.
 - [x] Correct the work and certification Drive links to the user's requested sharing URLs.
+- [x] Show the certifications folder link on the Projects page alongside work and GitHub links.

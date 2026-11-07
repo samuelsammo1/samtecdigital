@@ -174,6 +174,15 @@ function Projects() {
             <span aria-hidden>→</span>
           </a>
           <a
+            href="https://drive.google.com/drive/folders/1REBgVCp4dRMzImeAX2mEqb-7IQY3Dd1t?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5 text-sm font-medium text-primary transition-all hover:bg-primary/20 sm:ml-3"
+          >
+            View certifications on Google Drive
+            <span aria-hidden>→</span>
+          </a>
+          <a
             href="https://github.com/samuelsammo1"
             target="_blank"
             rel="noopener noreferrer"
