@@ -338,7 +338,7 @@ function About() {
               Credentials & Certificates
             </h2>
             <a
-              href="https://drive.google.com/drive/folders/1REBgVCp4dRMzImeAX2mEqb-7IQY3Dd1t?usp=drive_link"
+              href="https://drive.google.com/drive/folders/1REBgVCp4dRMzImeAX2mEqb-7IQY3Dd1t?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"

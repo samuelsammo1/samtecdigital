@@ -164,7 +164,7 @@ function Projects() {
           </p>
 
           <a
-            href="https://drive.google.com/drive/folders/1M03yF_UlDK3wrJ2lcZTvCh4ibJ5NTwHq?usp=drive_link"
+            href="https://drive.google.com/drive/folders/1M03yF_UlDK3wrJ2lcZTvCh4ibJ5NTwHq?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5 text-sm font-medium text-primary transition-all hover:bg-primary/20"

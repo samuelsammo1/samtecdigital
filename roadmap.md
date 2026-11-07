@@ -8,3 +8,4 @@
 - [x] Update availability wording for internships, entry-level, contract/full-time, and remote freelance work.
 - [x] Add the supplied Drive folder as the certifications link.
 - [x] Add Supreme Healthcare International to the portfolio projects and verify the link.
+- [x] Correct the work and certification Drive links to the user's requested sharing URLs.
